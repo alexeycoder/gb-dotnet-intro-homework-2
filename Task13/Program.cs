@@ -22,31 +22,48 @@ int GetNthDigitFromLeft(int num, int n)
 	if (num < 0)
 		num = -num;
 
-	int m = GetMagnitude(num);
-	for (int i = 1; i < n && m != 0; ++i, m /= 10)
-	{
-		num %= m;
-	}
+	int nPowersOfTen = 10;
+	for (int i = 1; i < n; ++i, nPowersOfTen *= 10) ;
 
-	return m != 0 ? num / m : -1;
+	if (num < nPowersOfTen / 10)
+		return -1;
+
+	while (num >= nPowersOfTen)
+		num /= 10;
+
+	return num % 10;
 }
 
-// returns:	1 for 0..9,
-// 			10 for 10..99,
-//			100 for 100..999, etc
-int GetMagnitude(int num)
-{
-	if (num < 0)
-		num = -num;
+// int GetNthDigitFromLeft(int num, int n)
+// {
+// 	if (num < 0)
+// 		num = -num;
 
-	num /= 10;
-	int magnitude = 1;
+// 	int m = GetMagnitude(num);
+// 	for (int i = 1; i < n && m != 0; ++i, m /= 10)
+// 	{
+// 		num %= m;
+// 	}
 
-	while (num >= magnitude)
-		magnitude *= 10;
+// 	return m != 0 ? num / m : -1;
+// }
 
-	return magnitude;
-}
+// // returns:	1 for 0..9,
+// // 			10 for 10..99,
+// //			100 for 100..999, etc
+// int GetMagnitude(int num)
+// {
+// 	if (num < 0)
+// 		num = -num;
+
+// 	num /= 10;
+// 	int magnitude = 1;
+
+// 	while (num >= magnitude)
+// 		magnitude *= 10;
+
+// 	return magnitude;
+// }
 
 int GetUserInput(string inputMessage, string errorMessage)
 {
