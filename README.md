@@ -10,7 +10,9 @@
 * 782 -> 8
 * 918 -> 1
 
+*Пример:*
 
+![task10-example](https://user-images.githubusercontent.com/109767480/183834072-86424ef1-f641-4008-bab4-214d52f8df45.png)
 
 ### Задача 13
 
@@ -20,7 +22,9 @@
 * 78 -> третьей цифры нет
 * 32679 -> 6
 
+*Пример:*
 
+![task13-example](https://user-images.githubusercontent.com/109767480/183834090-aab9b718-a1b4-4e84-b83d-121e70be7b78.png)
 
 ### Задача 15
 
@@ -29,3 +33,8 @@
 * 6 -> да
 * 7 -> да
 * 1 -> нет
+
+*Примеры:*
+
+![task15-example-1](https://user-images.githubusercontent.com/109767480/183834115-4cbdd6aa-65b2-41e5-8fa8-94c57a2b22f8.png)
+![task15-example-2](https://user-images.githubusercontent.com/109767480/183834128-a8d10190-f383-4972-b11d-39f12be70cbf.png)
