@@ -22,7 +22,9 @@
 * 78 -> третьей цифры нет
 * 32679 -> 6
 
-*Пример:*
+*Примеры:*
+
+![task13-example-2](https://user-images.githubusercontent.com/109767480/183835692-d811aa75-db27-4f0b-b4f0-0f02d5ab13bb.png)
 
 ![task13-example](https://user-images.githubusercontent.com/109767480/183834090-aab9b718-a1b4-4e84-b83d-121e70be7b78.png)
 
