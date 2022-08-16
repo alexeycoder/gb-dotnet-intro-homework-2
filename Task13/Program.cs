@@ -123,6 +123,9 @@ bool AskForRepeat()
 
 // int GetNumberOfDigits(int num)
 // {
+//	if (num < 10)
+//		return 1;
+//
 // 	int count = 0;
 // 	while (num != 0)
 // 	{
